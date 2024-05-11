@@ -7,7 +7,7 @@
           <v-col cols="5">
             <div style="position: relative" class="mt-16">
               <h1 class="text-gray">Hello</h1>
-              <h1 class="text-gray">Je suis Sivalingam Kavirajh</h1>
+              <h1 class="text-gray">I'm Sivalingam Kavirajh</h1>
               <span class="text-gray">Dévolpeur web</span><br>
               <v-btn tile dark class="text-yellow mt-8" variant="outlined">Contact me</v-btn>
             </div>
@@ -77,11 +77,7 @@
           <v-row>
             <v-col cols="12">
               <div class="child">
-                <v-btn
-                  icon="fas fa-laptop"
-                  color="#FBDF7E"
-                  class="text-white"
-                ></v-btn>
+                <v-btn icon="fas fa-laptop" color="#FBDF7E" class="text-white"></v-btn>
                 <h3 class="ml-3 mt-4">Web Design</h3>
                 <p class="text-grey ml-3 mt-4 text-caption">
                   Lorem, ipsum dolor sit amet <br />consectetur adipisicing
@@ -89,29 +85,14 @@
                 </p>
               </div>
               <div class="child">
-                <v-btn
-                  icon="fas fa-mobile-alt"
-                  color="#FBDF7E"
-                  class="text-white"
-                ></v-btn>
+                <v-btn icon="fas fa-mobile-alt" color="#FBDF7E" class="text-white"></v-btn>
                 <h3 class="ml-3 mt-4">App Design</h3>
-                <p class="text-grey ml-3 mt-4 text-caption">
+                  <p class="text-grey ml-3 mt-4 text-caption">
                   Lorem, ipsum dolor sit amet <br />consectetur adipisicing
                   <br />consectetur adipis
-                </p>
+                  </p>
               </div>
-              <div class="child">
-                <v-btn
-                  icon="fas fa-camera"
-                  color="#FBDF7E"
-                  class="text-white"
-                ></v-btn>
-                <h3 class="ml-3 mt-4">Photography</h3>
-                <p class="text-grey ml-3 mt-4 text-caption">
-                  Lorem, ipsum dolor sit amet <br />consectetur adipisicing
-                  <br />consectetur adipis
-                </p>
-              </div>
+              
             </v-col>
           </v-row>
           <v-divider></v-divider>
@@ -122,8 +103,8 @@
           <v-btn color="#FBDF7E" class="mr-2">All</v-btn>
           <v-btn class="mr-2" variant="tonal">Web Design</v-btn>
           <v-btn class="mr-2" variant="tonal">Front Design</v-btn>
-          <v-btn class="mr-2" variant="tonal"> Photography</v-btn>
-          <v-btn variant="tonal"> Illustration</v-btn>
+          <v-btn class="mr-2" variant="tonal"> Backend</v-btn>
+          <v-btn variant="tonal"> Data Base</v-btn>
         </div>
       </v-col>
       <v-col cols="12" class="imgHover">
@@ -150,15 +131,16 @@
       </v-col>
       <v-col cols="12" id="page">
         <div class="pre">
+          <h4>Our project</h4>
           <v-row>
             <v-col cols="12" sm="4">
               <v-card class="mx-auto" max-width="344" height="">
                 <v-img src="i10.jpg" height="200px" cover></v-img>
 
-                <v-card-title> We provide you the best </v-card-title>
+                <v-card-title> Crée le cv avec HTML,CSS </v-card-title>
 
                 <v-card-subtitle>
-                  By AAE IdeaPro | 06 Sep 2022
+                  By AAE IdeaPro | 02 janvier 2024
                 </v-card-subtitle>
                 <v-card-text>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
@@ -170,10 +152,10 @@
               <v-card class="mx-auto" max-width="344" height="">
                 <v-img src="i11.jpg" height="200px" cover></v-img>
 
-                <v-card-title> We provide you the best </v-card-title>
+                <v-card-title> Crée le cahier de charge </v-card-title>
 
                 <v-card-subtitle>
-                  By AAE IdeaPro | 06 Sep 2022
+                  By AAE IdeaPro | 06 mars 2024
                 </v-card-subtitle>
                 <v-card-text>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
@@ -185,7 +167,7 @@
               <v-card class="mx-auto" max-width="344" height="">
                 <v-img src="i12.jpg" height="200px" cover></v-img>
 
-                <v-card-title> We provide you the best </v-card-title>
+                <v-card-title> crée le cv avec HTML,CSS,JS </v-card-title>
 
                 <v-card-subtitle>
                   By AAE IdeaPro | 06 Sep 2022
@@ -222,30 +204,17 @@
             <div class="child">
               <h1>Contact info.</h1>
               <v-btn
-                icon="fas fa-map-marker-alt"
-                color=""
-                class="mt-10"
-                variant="outlined"
-              ></v-btn
-              ><br />
-              <span class="text-caption">Your Street SYO,yourArea Dream </span
-              ><br />
-              <v-btn
-                icon="fas fa-phone-alt"
-                color=""
-                class="mt-10"
-                variant="outlined"
-              ></v-btn
-              ><br />
+                icon="fas fa-map-marker-alt" color="" class="mt-10" variant="outlined">
+            </v-btn>
+              <br />
+              <span class="text-caption">Your Street SYO,yourArea Dream </span>
+              <br />
+              <v-btn class="mt-10" icon="fas fa-phone-alt" variant="outlined" color=""></v-btn>
+              <br />
               <span class="text-caption">00235 - 6521 </span> <br />
               <span class="text-caption">00235 - 6521 </span> <br />
-              <v-btn
-                icon="fas fa-envelope"
-                color=""
-                class="mt-10"
-                variant="outlined"
-              ></v-btn
-              ><br />
+              <v-btn class="mt-10" icon="fas fa-envelope" variant="outlined"></v-btn>
+              <br />
               <span class="text-caption">aaeideapro@gmail.com </span> <br />
               <span class="text-caption">aaeideapro@gmail.com </span> <br />
             </div>
@@ -268,18 +237,12 @@
                 ></v-text-field>
               </v-col>
               <v-col cols="12" sm="6">
-                <v-text-field
-                  label="Phone No"
-                  persistent-hint
-                  variant="outlined"
-                ></v-text-field>
+                <v-text-field label="Phone No" persistent-hint variant="outlined">
+                </v-text-field>
               </v-col>
             </v-row>
-            <v-textarea
-              label="Message"
-              persistent-hint
-              variant="outlined"
-            ></v-textarea>
+            <v-textarea label="Message" persistent-hint variant="outlined">
+            </v-textarea>
             <v-btn color="#FBDF7E" class="mt-2">Submit Now</v-btn>
           </v-col>
         </v-row>
