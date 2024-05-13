@@ -40,7 +40,7 @@
 
               </v-slider>
             </div>
-            <h4 class="mt-n4">I Am a Creative Web Designer</h4>
+            <h4 class="mt-m5">Je suis un dévelopeur web créative</h4>
               <h4 class="">And Developer</h4>
               <p class="text-grey">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -129,9 +129,9 @@
           <v-btn color="#FBDF7E" class="mt-4">Load More</v-btn>
         </div>
       </v-col>
-      <v-col cols="12" id="page">
+      <v-col cols="12" id="Projects">
         <div class="pre">
-          <h4>Our project</h4>
+          <h2>Mes projects</h2>
           <v-row>
             <v-col cols="12" sm="4">
               <v-card class="mx-auto" max-width="344" height="">
@@ -248,6 +248,7 @@
         </v-row>
       </v-col>
     </v-container>
+    <FooterView />
   </v-app>
 </template>
 
@@ -256,6 +257,9 @@ import { defineComponent } from 'vue';
 
 // Components
 import NavBar from '../components/NavBar.vue';
+import FooterView from '../components/FooterView.vue';
+
+
 
 export default defineComponent({
   name: 'HomeView',
@@ -272,7 +276,10 @@ export default defineComponent({
   },
 
   components: {
-   NavBar
+   NavBar,
+   FooterView,
+   
+   
   },
 });
 </script>
