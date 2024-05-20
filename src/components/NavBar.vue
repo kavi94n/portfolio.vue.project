@@ -2,14 +2,14 @@
   
     <v-app-bar app color="black" dark flat class="px-12">
       <v-btn>
-        <v-icon color="yellow" left class="mr-2">fas fa-signature</v-icon>KAVI
+        <v-icon color="blue" left class="mr-2">fas fa-signature</v-icon>KAVI
       </v-btn>
       <v-spacer></v-spacer>
-      <v-btn text @click="scroll('home')" class="text-yellow">Home</v-btn>
-      <v-btn text @click="scroll('about')" class="text-yellow">About</v-btn>
-      <v-btn text @click="scroll('portfolio')" class="text-yellow">Portfolio</v-btn>
-      <v-btn text @click="scroll('Projects')" class="text-yellow">Projects</v-btn>
-      <v-btn text @click="scroll('contact')" class="text-yellow">Contact</v-btn>
+      <v-btn text @click="scroll('home')" class="text-blue">Home</v-btn>
+      <v-btn text @click="scroll('about')" class="text-blue">About</v-btn>
+      <v-btn text @click="scroll('portfolio')" class="text-blue">Portfolio</v-btn>
+      <v-btn text @click="scroll('Projects')" class="text-blue">Projects</v-btn>
+      <v-btn text @click="scroll('contact')" class="text-blue">Contact</v-btn>
     </v-app-bar>
   
 </template>

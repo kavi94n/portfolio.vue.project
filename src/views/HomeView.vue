@@ -67,7 +67,7 @@
           <v-row>
             <v-col cols="12">
               <div class="child">
-                <v-btn icon="fas fa-laptop" color="#FBDF7E" class="text-white"></v-btn>
+                <v-btn icon="fas fa-laptop" color="#0032a7" class="text-white"></v-btn>
                 <h3 class="ml-3 mt-4">Web Design</h3>
                 <p class="text-grey ml-3 mt-4 text-caption">
                   Lorem, ipsum dolor sit amet <br />consectetur adipisicing
@@ -75,7 +75,7 @@
                 </p>
               </div>
               <div class="child">
-                <v-btn icon="fas fa-mobile-alt" color="#FBDF7E" class="text-white"></v-btn>
+                <v-btn icon="fas fa-mobile-alt" color="#0032a7" class="text-white"></v-btn>
                 <h3 class="ml-3 mt-4">App Design</h3>
                   <p class="text-grey ml-3 mt-4 text-caption">
                   Lorem, ipsum dolor sit amet <br />consectetur adipisicing
@@ -85,7 +85,6 @@
               
             </v-col>
           </v-row>
-          <v-divider></v-divider>
         </div>
       </v-col>
       <v-col cols="12" sm="12" id="services">
@@ -112,18 +111,19 @@
       </v-col>
       <v-col cols="12" sm="12">
         <div class="d-flex justify-center mb-6">
-          <v-btn color="#FBDF7E" class="mt-4">Load More</v-btn>
+          <v-btn color="#0032a7" class="mt-4">Load More</v-btn>
         </div>
       </v-col>
-      <v-col cols="12" id="Projects">
-        <div class="pre" pb="20">
+      <v-col cols="12" id="Projects" >
+        <div class="pre" pb="20" >
           <h2>Mes projects</h2>
-          <v-row>
-            <v-col cols="12" sm="4">
-              <v-card class="mx-auto" max-width="344" height="" >
-                <v-img src="12.png" height="200px" cover :elevation="isHovering ? 12 : 2" :class="{ 'on-hover': isHovering }" v-bind="props"></v-img>
-
-                <v-card-title> Crée le cv avec HTML,CSS </v-card-title>
+          <v-row class="fill-height" justify="center">
+            <template v-for="(item, i) in items" :key="i">
+              <v-col cols="12" md="4">
+              <v-hover v-slot="{ isHovering, props }">
+              <v-card :elevation="isHovering ? 12 : 2" :class="{ 'on-hover': isHovering }" v-bind="props" height="350px">
+                  <v-img src="12.Png" height="200px"  cover> </v-img>
+                <v-card-title>Crée le cv avec HTML,CSS</v-card-title>
 
                 <v-card-subtitle>
                   By AAE IdeaPro | 02 janvier 2024
@@ -133,10 +133,12 @@
                   rem saepe sapiente deleniti, odio non laborum fuga.
                 </v-card-text>
               </v-card>
+            </v-hover>
             </v-col>
             <v-col cols="12" sm="4">
-              <v-card class="mx-auto" max-width="344" height="">
-                <v-img src="i11.jpg" height="200px" cover></v-img>
+              <v-hover v-slot="{ isHovering, props }">
+              <v-card :elevation="isHovering ? 12 : 2" :class="{ 'on-hover': isHovering }" v-bind="props" height="350px">
+                <v-img src="12.png" height="200px" cover> </v-img>
 
                 <v-card-title> Crée le cahier de charge </v-card-title>
 
@@ -148,10 +150,12 @@
                   rem saepe sapiente deleniti, odio non laborum fuga.
                 </v-card-text>
               </v-card>
+            </v-hover>
             </v-col>
             <v-col cols="12" sm="4">
-              <v-card class="mx-auto" max-width="344" height="">
-                <v-img src="i12.jpg" height="200px" cover></v-img>
+              <v-hover v-slot="{ isHovering, props }">
+              <v-card :elevation="isHovering ? 12 : 2" :class="{ 'on-hover': isHovering }" v-bind="props" height="350px" >
+                <v-img src="12.png" height="200px" cover> </v-img>
 
                 <v-card-title> crée le cv avec HTML,CSS,JS </v-card-title>
 
@@ -163,7 +167,9 @@
                   rem saepe sapiente deleniti, odio non laborum fuga.
                 </v-card-text>
               </v-card>
+              </v-hover>
             </v-col>
+          </template>
           </v-row>
         </div>
       </v-col>
@@ -229,7 +235,7 @@
             </v-row>
             <v-textarea label="Message" persistent-hint variant="outlined">
             </v-textarea>
-            <v-btn color="#FBDF7E" class="mt-2">Submit Now</v-btn>
+            <v-btn color="#0032a7" class="mt-2">Submit Now</v-btn>
           </v-col>
         </v-row>
       </v-col>
@@ -267,6 +273,7 @@ export default defineComponent({
    
    
   },
+  
 });
 </script>
 <style scoped>
@@ -309,7 +316,7 @@ export default defineComponent({
   margin-top: 50px;
   widows: 356px;
   height: 300px;
-  background-color: #fbdf7e;
+  background-color: #0032a7;
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 0%;
   }
   .first {
@@ -342,4 +349,10 @@ export default defineComponent({
   background-color: #e9e9e9;
   margin-top: -24px;
 }
+.on-hover:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transform: scale(1.2);
+  
+
+  }
 </style>
