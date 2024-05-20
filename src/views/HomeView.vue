@@ -20,7 +20,7 @@
           </v-col>
           <v-col cols="5">
             <div style="position: relative;z-index: 9999;" class="mt-16">
-            <v-img src="14.png" contain max-height="300"></v-img>
+            <v-img src="17.png" contain max-height="300" pb="0"></v-img>
             </div>
           </v-col>
         </v-row>
@@ -30,7 +30,7 @@
           <v-row>
             <v-col cols="12" sm="6">
               <div class="egg">
-                <v-img src="" max-height="300"></v-img>
+                <v-img src="16.png" max-height="298"></v-img>
               </div>
             </v-col>
             <v-col cols="12" sm="6">
@@ -41,7 +41,6 @@
               </v-slider>
             </div>
             <h4 class="mt-m5">Je suis un dévelopeur web créative</h4>
-              <h4 class="">And Developer</h4>
               <p class="text-grey">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Aspernatur, ullam perspiciatis fugiat temporibus laboriosam
@@ -62,16 +61,7 @@
           </v-row>
         </div>
       </v-col>
-      <div class="text-center mt-4">
-        <h2>What we Do</h2>
-        <div style="width: 120px; margin: 0 auto">
-          <v-slider
-            v-model="slider2"
-            color="yellow"
-            label="track-color"
-          ></v-slider>
-        </div>
-      </div>
+     
       <v-col cols="12" class="padd" id="portfolio">
         <div class="first" id="project">
           <v-row>
@@ -112,11 +102,7 @@
           <template v-for="(item, i) in items" :key="i">
             <v-col cols="12" md="4">
               <v-hover v-slot="{ isHovering, props }">
-                <v-card
-                  :elevation="isHovering ? 12 : 2"
-                  :class="{ 'on-hover': isHovering }"
-                  v-bind="props"
-                >
+                <v-card :elevation="isHovering ? 12 : 2" :class="{ 'on-hover': isHovering }" v-bind="props">
                   <v-img :src="item.img" height="225px" cover> </v-img>
                 </v-card>
               </v-hover>
@@ -130,12 +116,12 @@
         </div>
       </v-col>
       <v-col cols="12" id="Projects">
-        <div class="pre">
+        <div class="pre" pb="20">
           <h2>Mes projects</h2>
           <v-row>
             <v-col cols="12" sm="4">
-              <v-card class="mx-auto" max-width="344" height="">
-                <v-img src="i10.jpg" height="200px" cover></v-img>
+              <v-card class="mx-auto" max-width="344" height="" >
+                <v-img src="12.png" height="200px" cover :elevation="isHovering ? 12 : 2" :class="{ 'on-hover': isHovering }" v-bind="props"></v-img>
 
                 <v-card-title> Crée le cv avec HTML,CSS </v-card-title>
 
@@ -170,7 +156,7 @@
                 <v-card-title> crée le cv avec HTML,CSS,JS </v-card-title>
 
                 <v-card-subtitle>
-                  By AAE IdeaPro | 06 Sep 2022
+                  By AAE IdeaPro | 01 janvier 2024
                 </v-card-subtitle>
                 <v-card-text>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
@@ -207,16 +193,16 @@
                 icon="fas fa-map-marker-alt" color="" class="mt-10" variant="outlined">
             </v-btn>
               <br />
-              <span class="text-caption">Your Street SYO,yourArea Dream </span>
+              <span class="text-caption">av du 8 mai 1945, le blanc mesnil </span>
               <br />
               <v-btn class="mt-10" icon="fas fa-phone-alt" variant="outlined" color=""></v-btn>
               <br />
-              <span class="text-caption">00235 - 6521 </span> <br />
-              <span class="text-caption">00235 - 6521 </span> <br />
+              <span class="text-caption"> 06 02 65 12 89 </span> <br />
+              <span class="text-caption"> 01 48 56 56 24 </span> <br />
               <v-btn class="mt-10" icon="fas fa-envelope" variant="outlined"></v-btn>
               <br />
               <span class="text-caption">aaeideapro@gmail.com </span> <br />
-              <span class="text-caption">aaeideapro@gmail.com </span> <br />
+              <span class="text-caption">cef@gmail.com </span> <br />
             </div>
           </v-col>
           <v-col cols="12" sm="8">
