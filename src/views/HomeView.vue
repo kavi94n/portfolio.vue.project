@@ -9,18 +9,17 @@
               <h1 class="text-gray">Hello</h1>
               <h1 class="text-gray">I'm Sivalingam Kavirajh</h1>
               <span class="text-gray">Dévolpeur web</span><br>
-              <v-btn tile dark class="text-yellow mt-8" variant="outlined">Contact me</v-btn>
+              <v-btn tile dark class="text-blue mt-8" variant="outlined">Contact me</v-btn>
             </div>
           </v-col> 
           <v-col cols="2">
             <div style="position: absolute;z-index: 9999;bottom:0;margin-left:auto;margin-right: auto;left: 0;right: 0;text-align: center; ">
               <v-icon>fas fa-angle-double-down</v-icon>
-
             </div> 
           </v-col>
           <v-col cols="5">
             <div style="position: relative;z-index: 9999;" class="mt-16">
-            <v-img src="17.png" contain max-height="300" pb="0"></v-img>
+              <v-img src="17.png" contain max-height="300" pb="0"></v-img>
             </div>
           </v-col>
         </v-row>
@@ -31,12 +30,12 @@
             <v-col cols="12" sm="6">
               <div class="egg">
                 <v-img src="16.png" max-height="298"></v-img>
-              </div>
-            </v-col>
-            <v-col cols="12" sm="6">
-              <h5 class="mt-16">About me</h5>
-              <div style="width: 120px;">
-              <v-slider v-model="slider2" color="yellow" label="">
+                </div>
+                  </v-col>
+                  <v-col cols="12" sm="6">
+                  <h5 class="mt-16">About me</h5>
+                <div style="width: 120px;">
+              <v-slider v-model="slider2" color="#0032a7" label="">
 
               </v-slider>
             </div>
@@ -48,13 +47,13 @@
                 Placeat dicta architecto reiciendis est veniam. Unde.
               </p>
               <br />
-              <p class="text-grey">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Aspernatur, ullam perspiciatis fugiat temporibus laboriosam
-                accusamus tempora repellendus sequi sed cum dolorum vero est.
-                Placeat dicta architecto reiciendis est veniam. Unde.
-              </p>
-              <v-btn tile dark color="yellow" class="mt-4">
+                <p class="text-grey">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Aspernatur, ullam perspiciatis fugiat temporibus laboriosam
+                  accusamus tempora repellendus sequi sed cum dolorum vero est.
+                  Placeat dicta architecto reiciendis est veniam. Unde.
+                </p>
+              <v-btn tile dark color="#0032a7" class="mt-4">
                 Download Resume
               </v-btn>
             </v-col>
@@ -75,21 +74,20 @@
                 </p>
               </div>
               <div class="child">
-                <v-btn icon="fas fa-mobile-alt" color="#0032a7" class="text-white"></v-btn>
-                <h3 class="ml-3 mt-4">App Design</h3>
+                  <v-btn icon="fas fa-mobile-alt" color="#0032a7" class="text-white"></v-btn>
+                  <h3 class="ml-3 mt-4">App Design</h3>
                   <p class="text-grey ml-3 mt-4 text-caption">
                   Lorem, ipsum dolor sit amet <br />consectetur adipisicing
                   <br />consectetur adipis
                   </p>
               </div>
-              
             </v-col>
           </v-row>
         </div>
       </v-col>
       <v-col cols="12" sm="12" id="services">
         <div class="d-flex justify-center mb-6">
-          <v-btn color="#FBDF7E" class="mr-2">All</v-btn>
+          <v-btn color="#0032a7" class="mr-2">All</v-btn>
           <v-btn class="mr-2" variant="tonal">Web Design</v-btn>
           <v-btn class="mr-2" variant="tonal">Front Design</v-btn>
           <v-btn class="mr-2" variant="tonal"> Backend</v-btn>
@@ -120,56 +118,54 @@
           <v-row class="fill-height" justify="center">
             <template v-for="(item, i) in items" :key="i">
               <v-col cols="12" md="4">
-              <v-hover v-slot="{ isHovering, props }">
-              <v-card :elevation="isHovering ? 12 : 2" :class="{ 'on-hover': isHovering }" v-bind="props" height="350px">
-                  <v-img src="12.Png" height="200px"  cover> </v-img>
-                <v-card-title>Crée le cv avec HTML,CSS</v-card-title>
+                <v-hover v-slot="{ isHovering, props }">
+                  <v-card :elevation="isHovering ? 12 : 2" :class="{ 'on-hover': isHovering }" v-bind="props" height="350px">
+                    <v-img src="18.Png" height="200px"  cover> </v-img>
+                    <v-card-title>Crée le cv avec HTML,CSS</v-card-title>
 
-                <v-card-subtitle>
-                  By AAE IdeaPro | 02 janvier 2024
-                </v-card-subtitle>
-                <v-card-text>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-                  rem saepe sapiente deleniti, odio non laborum fuga.
-                </v-card-text>
-              </v-card>
-            </v-hover>
-            </v-col>
-            <v-col cols="12" sm="4">
-              <v-hover v-slot="{ isHovering, props }">
-              <v-card :elevation="isHovering ? 12 : 2" :class="{ 'on-hover': isHovering }" v-bind="props" height="350px">
-                <v-img src="12.png" height="200px" cover> </v-img>
+                    <v-card-subtitle>
+                      By AAE IdeaPro | 02 janvier 2024
+                    </v-card-subtitle>
+                    <v-card-text>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                      rem saepe sapiente deleniti, odio non laborum fuga.
+                    </v-card-text>
+                  </v-card>
+                </v-hover>
+              </v-col>
+              <v-col cols="12" sm="4">
+                <v-hover v-slot="{ isHovering, props }">
+                  <v-card :elevation="isHovering ? 12 : 2" :class="{ 'on-hover': isHovering }" v-bind="props" height="350px">
+                    <v-img src="19.jpg" height="200px" cover> </v-img>
+                    <v-card-title> Crée le cahier de charge </v-card-title>
+                    <v-card-subtitle>
+                      By AAE IdeaPro | 06 mars 2024
+                    </v-card-subtitle>
+                    <v-card-text>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                      rem saepe sapiente deleniti, odio non laborum fuga.
+                    </v-card-text>
+                  </v-card>
+                </v-hover>
+              </v-col>
+              <v-col cols="12" sm="4">
+                <v-hover v-slot="{ isHovering, props }">
+                  <v-card :elevation="isHovering ? 12 : 2" :class="{ 'on-hover': isHovering }" v-bind="props" height="350px" >
+                    <v-img src="20.jpg" height="200px" cover> </v-img>
 
-                <v-card-title> Crée le cahier de charge </v-card-title>
+                    <v-card-title> crée le cv avec HTML,CSS,JS </v-card-title>
 
-                <v-card-subtitle>
-                  By AAE IdeaPro | 06 mars 2024
-                </v-card-subtitle>
-                <v-card-text>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-                  rem saepe sapiente deleniti, odio non laborum fuga.
-                </v-card-text>
-              </v-card>
-            </v-hover>
-            </v-col>
-            <v-col cols="12" sm="4">
-              <v-hover v-slot="{ isHovering, props }">
-              <v-card :elevation="isHovering ? 12 : 2" :class="{ 'on-hover': isHovering }" v-bind="props" height="350px" >
-                <v-img src="12.png" height="200px" cover> </v-img>
-
-                <v-card-title> crée le cv avec HTML,CSS,JS </v-card-title>
-
-                <v-card-subtitle>
-                  By AAE IdeaPro | 01 janvier 2024
-                </v-card-subtitle>
-                <v-card-text>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-                  rem saepe sapiente deleniti, odio non laborum fuga.
-                </v-card-text>
-              </v-card>
-              </v-hover>
-            </v-col>
-          </template>
+                    <v-card-subtitle>
+                      By AAE IdeaPro | 01 janvier 2024
+                    </v-card-subtitle>
+                    <v-card-text>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                      rem saepe sapiente deleniti, odio non laborum fuga.
+                    </v-card-text>
+                  </v-card>
+                </v-hover>
+              </v-col>
+            </template>
           </v-row>
         </div>
       </v-col>
@@ -185,7 +181,7 @@
               </p>
             </v-col>
             <v-col cols="12" sm="4">
-              <v-btn color="#FBDF7E" class="mt-15">Hire Me</v-btn>
+              <v-btn color="#0032a7" class="mt-15">Hire Me</v-btn>
             </v-col>
           </v-row>
         </div>
@@ -337,7 +333,7 @@ export default defineComponent({
 }
 .pre {
   width: 100%;
-  height: 380px;
+  height: 400px;
   text-align: center;
   padding: 0 200px;
   background-color: #f5f5f5;
